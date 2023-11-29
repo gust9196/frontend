@@ -1,32 +1,33 @@
 import React, {useState} from 'react'
-import "./register.css"
-import { useNavigate } from 'react-router-dom';
+import { Route, Router, useNavigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
+import './register.css';
 
 function Register() {
 
     function RegisterForm(props) {
 
         return(
-            <form onSubmit={handleSubmit}>
-      <label>
-        Navn
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-      </label>
-      <label>
-        Adresse
-        <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} />
-      </label>
-      <label>
-        Telefon nummer
-        <input type="tel" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
-      </label>
-      <label>
-        E-Mail
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-      </label>
-      <button type="submit">Register ny kunde</button>
-    </form>
+            <>
+                <div className="div-container">
+                    <div className="div-header-title">Register ny bil</div>
+                    <div className="div-title">Bilmærke</div>
+                    <div className="div-input" />
+                    <div className="div-title">Model</div>
+                    <div className="div-input" />
+                    <div className="div-title">Registeringsnummer</div>
+                    <div className="div-input" />
+                    <div className="div-title">Indkøbspris</div>
+                    <div className="div-input" />
+                    <div className="div-title">Brændstof</div>
+                    <div className="div-input" />
+                    <div className="div-title">KM kørt ved registering</div>
+                    <div className="div-input" />
+                    <div className="div-title">Link til billede</div>
+                    <div className="div-input" />
+                    <div className="div-new-customer">Register ny kunde</div>
+                </div>
+            </>
         )
     }
 
@@ -48,7 +49,10 @@ function Register() {
    
     return (
       <>
-        <Sidebar />
+        <div className="re-main-container">
+            <Sidebar />
+            <RegisterForm />
+        </div>
       </>
     );
 

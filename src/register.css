@@ -9,17 +9,33 @@
 
 .div-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-left: 100px;
     margin: 0;
   }
+
+  .row-1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    margin: 0;
+    margin-top: 150px;
+
+  }
+
+  .row-2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    margin: 0;
+    margin-top: 150px;
+  }
+
   .div-header-title {
     color: #3a57e8;
-    text-align: center;
-    align-content: center;
     width: 100%;
-    margin-top: 5px;
-    margin-bottom: 25px;
+    position: fixed;
+    top: 50px;
     font: 700 20px/35px Inter, -apple-system, Roboto, Helvetica,
       sans-serif;
   }
@@ -63,7 +79,7 @@
   .div-new-customer {
     color: white;
     position: relative;
-    margin-top: 30px;
+    margin-top: 38px;
     text-align: center;
     white-space: nowrap;
     justify-content: bottom;

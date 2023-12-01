@@ -11,27 +11,29 @@ function RegisterNewCar() {
         return(
             <>
                 <div className="div-container">
-                        <div className='row-1'>
-                        <div className="div-header-title">Register ny bil</div>
-                            <div className="div-title">Bilmærke</div>
-                            <div className="div-input" />
-                            <div className="div-title">Model</div>
-                            <div className="div-input" />
-                            <div className="div-title">Registeringsnummer</div>
-                            <div className="div-input" />
-                            <div className="div-title">Indkøbspris</div>
-                            <div className="div-input" />
-                        </div>
-                        <div className='row-2'>
-                            <div className="div-title">Brændstof</div>
-                            <div className="div-input" />
-                            <div className="div-title">KM kørt ved registering</div>
-                            <div className="div-input" />
-                            <div className="div-title">Link til billede</div>
-                            <div className="div-input" />
-                            <div className="div-new-customer">Register ny kunde</div>
-                        </div>
-                </div>
+                  <div className='row-1'>
+                      <div className="div-header-title">Register ny bil</div>
+                      <div className="div-title">Bilmærke</div>
+                      <input type="text" className="div-input" />
+                      <div className="div-title">Model</div>
+                      <input type="text" className="div-input" />
+                      <div className="div-title">Registeringsnummer</div>
+                      <input type="text" className="div-input" />
+                      <div className="div-title">Indkøbspris</div>
+                      <input type="text" className="div-input" />
+                      <div className="div-new-car">Register ny bil</div>
+                  </div>
+                  <div className='row-2'>
+                      <div className="div-title">Brændstof</div>
+                      <input type="text" className="div-input" />
+                      <div className="div-title">KM kørt ved registering</div>
+                      <input type="text" className="div-input" />
+                      <div className="div-title">Indkøbs dato</div>
+                      <input type="text" className="div-input" />
+                      <div className="div-title">Link til billede</div>
+                      <input type="text" className="div-input" />
+                  </div>
+              </div>
             </>
         )
     }

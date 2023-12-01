@@ -45,7 +45,7 @@ const ImageComponent = () => {
             ))}
           </div>
           <div className="cf-input-column">
-            {[5, 6].map((i) => (
+            {[5, 6, 7].map((i) => (
               <input 
                 key={i} 
                 type="text" 

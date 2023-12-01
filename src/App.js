@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import LoginForm from "./LoginForm";
 import RegisterNewCar from "./RegisterNewCar";
-import ImageComponent from "./CarForm";
+import RegisterNewCustomer from "./RegisterNewCustomer";
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<LoginForm />} />
           <Route path="/sidebar" element={<Sidebar />} />
           <Route path="/new-car" element={<RegisterNewCar />} />
-          <Route path="/carform" element={<ImageComponent />} /> {/* Updated component name */}
+          <Route path="/new-customer" element={<RegisterNewCustomer />} />
         </Routes>
       </Router>
     </>

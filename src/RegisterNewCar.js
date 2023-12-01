@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import { Route, Router, useNavigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
-import './register.css';
+import ImageComponent from "./CarForm";
+import './registernewcar.css';
 
-function Register() {
+function RegisterNewCar() {
 
-    function RegisterForm(props) {
+    function RegisterNewCarForm(props) {
 
         return(
             <>
@@ -55,7 +56,8 @@ function Register() {
       <>
         <div className="re-main-container">
             <Sidebar />
-            <RegisterForm />
+            <RegisterNewCarForm /> 
+            <ImageComponent />
         </div>
       </>
     );
@@ -63,5 +65,5 @@ function Register() {
 
   }
    
-  export default Register;
+  export default RegisterNewCar;
   

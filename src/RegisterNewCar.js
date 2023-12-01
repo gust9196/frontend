@@ -38,10 +38,14 @@ function RegisterNewCar() {
         )
     }
 
-    const [name, setName] = useState('');
-    const [address, setAddress] = useState('');
-    const [phoneNumber, setPhoneNumber] = useState('');
-    const [email, setEmail] = useState('');
+    const [brand, setBrand] = useState('');
+    const [model, setModel] = useState('');
+    const [regNumber, setRegNumber] = useState('');
+    const [buyPrice, setBuyPrice] = useState('');
+    const [fuel, setFuel] = useState('');
+    const [km, setKm] = useState('');
+    const [buyDate, setBuyDate] = useState('');
+    const [imageLink, setImageLink] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();

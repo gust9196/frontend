@@ -19,12 +19,13 @@ function RegisterNewCustomer() {
                     <input type="text" className="div-input-nc" />
                     <div className="div-title">E-mail</div>
                     <input type="text" className="div-input-nc" />
+                    <div className="div-new-customer-btn">Register ny kunde</div>
                 </div>
             </>
         )
     }
 
-    const [name, setName] = useState('');
+        const [name, setName] = useState('');
         const [address, setAddress] = useState('');
         const [phoneNumber, setPhoneNumber] = useState('');
         const [email, setEmail] = useState('');

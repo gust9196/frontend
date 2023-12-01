@@ -41,7 +41,7 @@ function Sidebar(props) {
           <button className="sb-description" onClick={() => handleButtonClick('/car-administration')}>
             Biladministration
           </button>
-          <button className="sb-title" onClick={() => handleButtonClick('/logout')}>
+          <button className="sb-title" onClick={() => handleButtonClick('/login')}>
             Log ud
           </button>
         </div>

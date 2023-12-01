@@ -33,3 +33,26 @@
       max-width: 100%;
     }
   }
+
+  .div-new-customer-btn {
+    color: white;
+    position: fixed;
+    bottom: 40px;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: bottom;
+    border-radius: 5px;
+    background-color: #3a57e8;
+    border: 1px solid var(--3A57E8-Primary, #3a57e8);
+    width: 200px;
+    max-width: 100%;
+    padding: 8px 0px;
+    font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-new-customer-btn {
+      white-space: initial;
+      padding: 0 4px;
+    }
+  }

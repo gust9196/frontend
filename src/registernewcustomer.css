@@ -1,0 +1,35 @@
+.nc-main-container {
+    align-items: start;
+    height: 100vh;
+    max-width: 270px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+  }
+
+
+.div-container-nc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    margin: 0;
+    margin-top: 150px;
+  }
+
+  .div-input-nc {
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--3A57E8-Primary, #3a57e8);
+    background-color: var(--FFFFFF-Bg-1, #fff);
+    align-self: stretch;
+    display: flex;
+    min-height: 44px;
+    margin-top: 2px;
+    width: 270px;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-input-nc {
+      max-width: 100%;
+    }
+  }

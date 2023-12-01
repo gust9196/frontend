@@ -1,8 +1,17 @@
+.lease-agreement-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
 .lease-agreement-list-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #f0f0f0;
+  max-width: auto;
+  background-color: #dad9d9;
   padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .lease-agreement-table {
@@ -15,13 +24,18 @@
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  font-size: 12px;
 }
 
 .lease-agreement-table th {
-  background-color: #4CAF50;
+  background-color: #3a57e8;
   color: white;
 }
 
 .lease-agreement-table tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #dad9d9; /* Hvid baggrund for hver anden række */
+}
+
+.lease-agreement-table tbody tr:nth-child(odd) {
+  background-color: #c9c8c8; /* En anden farve for de ulige rækker */
 }

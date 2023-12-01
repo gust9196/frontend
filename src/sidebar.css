@@ -18,6 +18,7 @@
       height: 100%;
       flex-direction: column;
       padding: 0px 25px 0px 25px;
+      margin-right: 100px;
     }
     
 
@@ -51,27 +52,6 @@
       margin: 20px 0 0px 15px;
       font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica, sans-serif;
     }
-
-    /*.re-register {
-        color: #3a57e8;
-        background-color: #d9d9d9;
-        border: 1px solid #d9d9d9;
-        align-self: start;
-        padding: 5px;
-        margin: 20px 0 0px 15px;
-        font: 600 18px/28px Inter, -apple-system, Roboto, Helvetica, sans-serif;
-      }
-  
-      .re-register:hover {
-        color: #5a6fda;
-        background-color: #cbcaca;
-        padding: 5px;
-        border-radius: 5px;
-        border: 1px solid #cbcaca;
-        align-self: start;
-        margin: 20px 0 0px 15px;
-        font: 600 19px/29px Inter, -apple-system, Roboto, Helvetica, sans-serif;
-      }*/
 
     .sb-title {
       color: var(--FFFFFF-Bg-1, #fff);

@@ -4,7 +4,8 @@ import Sidebar from "./Sidebar";
 import LoginForm from "./LoginForm";
 import RegisterNewCar from "./RegisterNewCar";
 import RegisterNewCustomer from "./RegisterNewCustomer";
-import Carlist from "./Carlist";
+import Carlist from "./CarList";
+import LeaseAgreementList from "./LeaseAgreementList";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/new-car" element={<RegisterNewCar />} />
           <Route path="/new-customer" element={<RegisterNewCustomer />} />
           <Route path="/carlist" element={<Carlist />} />
+          <Route path="/leaseagreementlist" element={<LeaseAgreementList />} />
         </Routes>
       </Router>
     </>

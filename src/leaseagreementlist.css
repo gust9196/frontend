@@ -1,0 +1,27 @@
+.lease-agreement-list-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.lease-agreement-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.lease-agreement-table th, .lease-agreement-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.lease-agreement-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.lease-agreement-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import LoginForm from "./LoginForm";
 import RegisterNewCar from "./RegisterNewCar";
 import RegisterNewCustomer from "./RegisterNewCustomer";
+import Carlist from "./Carlist";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/sidebar" element={<Sidebar />} />
           <Route path="/new-car" element={<RegisterNewCar />} />
           <Route path="/new-customer" element={<RegisterNewCustomer />} />
+          <Route path="/carlist" element={<Carlist />} />
         </Routes>
       </Router>
     </>

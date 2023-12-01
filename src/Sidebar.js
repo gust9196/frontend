@@ -26,7 +26,7 @@ function Sidebar(props) {
           <button className="sb-description" onClick={() => handleButtonClick('/new-customer')}>
             Register ny kunde
           </button>
-          <button className="sb-description" onClick={() => handleButtonClick('/current-deals')}>
+          <button className="sb-description" onClick={() => handleButtonClick('/leaseagreementlist')}>
             Nuværende aftaler
           </button>
           <button className="sb-description" onClick={() => handleButtonClick('/damage-repair')}>

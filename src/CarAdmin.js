@@ -30,7 +30,6 @@ function CarAdmin() {
 
   return (
         <div className="ca-main-container">
-            <Sidebar />
             <CarAdminForm/>
         </div>
   )

@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import './registernewcustomer.css';
-import Sidebar from './Sidebar';
 
 function RegisterNewCustomer() {
 
@@ -44,7 +43,6 @@ function RegisterNewCustomer() {
             return (
                 <>
                 <div className="nc-main-container">
-                    <Sidebar />
                     <RegisterNewCustomerForm/>
                 </div>
                 </>

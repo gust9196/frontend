@@ -26,7 +26,6 @@ function RegisterNewAgreement() {
 
   return (
         <div className="na-main-container">
-            <Sidebar />
             <RegisterNewAgreementForm />
         </div>
   )

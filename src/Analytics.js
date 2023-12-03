@@ -30,7 +30,6 @@ function Analytics() {
 
   return (
         <div className="a-main-container">
-            <Sidebar />
             <AnalyticsForm/>
         </div>
   )

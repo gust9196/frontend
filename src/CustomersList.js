@@ -1,10 +1,11 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import './customers.css';
+import './customerslist.css';
 import Sidebar from './Sidebar';
 
-function Customers() {
-
+function CustomersList() {
+    
+   
 
     function CustomersForm(props) {
 
@@ -31,4 +32,4 @@ function Customers() {
   )
 }
 
-export default Customers
+export default CustomersList

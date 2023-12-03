@@ -7,11 +7,11 @@ import RegisterNewCar from "./RegisterNewCar";
 import RegisterNewCustomer from "./RegisterNewCustomer";
 import DamageRepair from "./DamageRepair";
 import Analytics from "./Analytics";
-import Customers from "./Customers";
+import CustomersList from "./CustomersList"
 import CarAdmin from "./CarAdmin";
 import CarList from "./CarList";
 import LeaseAgreementList from "./LeaseAgreementList";
-
+import NewsFeed from "./NewsFeed";
 
 function App() {
   return (
@@ -27,10 +27,12 @@ function App() {
           <Route path="/new-customer" element={<RegisterNewCustomer />} />
           <Route path="/damage-repair" element={<DamageRepair />} />
           <Route path="/analytics" element={<Analytics />} />
-          <Route path="/customers" element={<Customers />} />
+          <Route path="/customerslist" element={<CustomersList />} />
           <Route path="/car-administration" element={<CarAdmin />} />
           <Route path="/carlist" element={<CarList />} />
           <Route path="/leaseagreementlist" element={<LeaseAgreementList />} />
+          <Route path="/newsfeed" element={<NewsFeed />} />
+
         </Routes>
         </div>
         </div>

@@ -36,3 +36,29 @@
     font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica, sans-serif;
   }
   
+  .div-new-car-btn-cl {
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: bottom;
+    border-radius: 5px;
+    background-color: #3a57e8;
+    border: 1px solid var(--3A57E8-Primary, #3a57e8);
+    width: 270px;
+    height: 40px;
+    max-width: 100%;
+    padding: 8px 2px;
+    font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+
+  .div-header-title-cl {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .car-list-container h2{
+    font-size: 28px;
+  }

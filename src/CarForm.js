@@ -1,58 +1,60 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./carform.css";
 
-const CarForm = () => {
-  const [inputs, setInputs] = useState({
-    carName: '', 
-    field2: '',
-    field3: '',
-    field4: '',
-    field5: '',
-    field6: '',
-  });
-
-  const handleChange = (e) => {
-    setInputs({ ...inputs, [e.target.name]: e.target.value });
-  };
-
+const CarForm = ({ carData }) => {
   return (
     <div className="cf-image-container">
       <img className='cf-img'
-        src="https://blog.bilbasen.dk/wp-content/uploads/2021/02/tesla-x-1-scaled.jpg" 
+        src={carData.imageLink } 
       />
       <input 
               type="text" 
-              name="carName" 
-              value={inputs.carName} 
-              onChange={handleChange} 
-              placeholder="Navn på bilen"
+              value={carData.brand} 
+              readOnly
               className='car-name-input'
+              placeholder="Bilmærke"
             />
       <div className="cf-input-container">
         <div className="cf-input-row">
-        <div className="cf-input-column">
-            {[2, 3, 4].map((i) => (
-              <input 
-                key={i} 
-                type="text" 
-                name={`field${i}`} 
-                value={inputs[`field${i}`]} 
-                onChange={handleChange} 
-                placeholder={`Felt ${i}`}
-              />
-            ))}
+          <div className="cf-input-column">
+            <input 
+              type="text" 
+              value={carData.model} 
+              readOnly
+              placeholder="Model"
+            />
+            <input 
+              type="text" 
+              value={carData.regNumber} 
+              readOnly
+              placeholder="Registeringsnummer"
+            />
+            <input 
+              type="text" 
+              value={carData.buyPrice} 
+              readOnly
+              placeholder="Indkøbspris"
+            />
           </div>
           <div className="cf-input-column">
-            {[5, 6, 7].map((i) => (
-              <input 
-                key={i} 
-                type="text" 
-                name={`field${i}`} 
-                value={inputs[`field${i}`]} 
-                onChange={handleChange} 
-                placeholder={`Felt ${i}`}
-              />
-            ))}
+            <input 
+              type="text" 
+              value={carData.fuel} 
+              readOnly
+              placeholder="Brændstof"
+            />
+            <input 
+              type="text" 
+              value={carData.km} 
+              readOnly
+              placeholder="KM kørt ved registering"
+            />
+            <input 
+              type="text" 
+              value={carData.buyDate} 
+              readOnly
+              placeholder="Indkøbs dato"
+            />
           </div>
         </div>
       </div>

@@ -1,7 +1,10 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 import './sidebar.css';
+
+
 function Sidebar(props) {
+
   let navigate = useNavigate();
 
   const handleButtonClick = (endpoint) => {

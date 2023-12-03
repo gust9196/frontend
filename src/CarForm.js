@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Route, Router, useNavigate } from 'react-router-dom';
 import "./carform.css";
 
-const ImageComponent = () => {
+const CarForm = () => {
   const [inputs, setInputs] = useState({
     carName: '', 
     field2: '',
@@ -20,7 +19,6 @@ const ImageComponent = () => {
     <div className="cf-image-container">
       <img className='cf-img'
         src="https://blog.bilbasen.dk/wp-content/uploads/2021/02/tesla-x-1-scaled.jpg" 
-        alt="Billede" 
       />
       <input 
               type="text" 
@@ -62,4 +60,4 @@ const ImageComponent = () => {
   );
 };
 
-export default ImageComponent;
+export default CarForm;

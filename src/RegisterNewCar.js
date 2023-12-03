@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { Route, Router, useNavigate } from 'react-router-dom';
-import Sidebar from './Sidebar';
-import ImageComponent from "./CarForm";
+import CarForm from "./CarForm";
 import './registernewcar.css';
 
 function RegisterNewCar() {
@@ -64,7 +63,7 @@ function RegisterNewCar() {
       <>
         <div className="re-main-container">
             <RegisterNewCarForm /> 
-            <ImageComponent />
+            <CarForm />
         </div>
       </>
     );

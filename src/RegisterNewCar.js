@@ -11,8 +11,9 @@ function RegisterNewCar() {
         return(
             <>
                 <div className="div-container">
+                <div className="div-header-title">Register ny bil</div>
+                <div className='row-container'>
                   <div className='row-1'>
-                      <div className="div-header-title">Register ny bil</div>
                       <div className="div-title">Bilmærke</div>
                       <input type="text" className="div-input" />
                       <div className="div-title">Model</div>
@@ -32,6 +33,7 @@ function RegisterNewCar() {
                       <input type="text" className="div-input" />
                       <div className="div-title">Link til billede</div>
                       <input type="text" className="div-input" />
+                  </div>
                   </div>
               </div>
             </>
@@ -61,7 +63,6 @@ function RegisterNewCar() {
     return (
       <>
         <div className="re-main-container">
-            <Sidebar />
             <RegisterNewCarForm /> 
             <ImageComponent />
         </div>

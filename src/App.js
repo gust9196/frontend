@@ -21,7 +21,7 @@ function App() {
         <Sidebar />
         <div className="sidebar-content-container">
         <Routes>
-          <Route path="/" element={<LoginForm />} />
+          <Route path="/login" element={<LoginForm />} />
           <Route path="/new-agreement" element={<RegisterNewAgreement />} />
           <Route path="/new-car" element={<RegisterNewCar />} />
           <Route path="/new-customer" element={<RegisterNewCustomer />} />

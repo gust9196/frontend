@@ -64,7 +64,6 @@ const LeaseAgreementList = () => {
   return (
     <>
     <div className="lease-agreement-container">
-      <Sidebar />
       <LeaseAgreementListForm />
     </div>
     </>

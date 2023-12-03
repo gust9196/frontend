@@ -1,19 +1,6 @@
-.nc-main-container {
-    align-items: start;
-    height: 100vh;
-    max-width: 270px;
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-  }
-
-
 .div-container-nc {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    margin: 0;
-    margin-top: 150px;
   }
 
   .div-input-nc {
@@ -28,31 +15,20 @@
     width: 270px;
     flex-direction: column;
   }
-  @media (max-width: 991px) {
-    .div-input-nc {
-      max-width: 100%;
-    }
-  }
 
   .div-new-customer-btn {
     color: white;
-    position: fixed;
-    bottom: 40px;
+    margin-top: 30px;
     text-align: center;
     white-space: nowrap;
     justify-content: bottom;
     border-radius: 5px;
     background-color: #3a57e8;
     border: 1px solid var(--3A57E8-Primary, #3a57e8);
-    width: 200px;
+    width: 270px;
     max-width: 100%;
-    padding: 8px 0px;
+    padding: 8px 2px;
     font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica,
       sans-serif;
   }
-  @media (max-width: 991px) {
-    .div-new-customer-btn {
-      white-space: initial;
-      padding: 0 4px;
-    }
-  }
+ 

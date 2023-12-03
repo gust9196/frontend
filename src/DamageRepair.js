@@ -29,7 +29,6 @@ function DamageRepair() {
 
     return (
             <div className="dr-main-container">
-                <Sidebar />
                 <DamageRepairForm/>
             </div>
     )

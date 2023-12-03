@@ -1,7 +1,7 @@
 .car-list-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: aliceblue;
+    max-width: 100vw;
+    margin-right: 10px;
+    background-color: transparent;
   }
   
   .car-grid {
@@ -14,7 +14,8 @@
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-    background-color:cornsilk;
+    background-color: #d9d9d9;
+    border-radius: 5px;
   }
   
   .car-image {
@@ -25,5 +26,13 @@
   
   .car-details {
     margin-top: 10px;
+  }
+
+  .car-list-container p{
+    color: #3a3838;
+    background-color: transparent;
+    border: 1px solid transparent;
+    align-self: start;
+    font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica, sans-serif;
   }
   

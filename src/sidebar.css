@@ -7,8 +7,9 @@
       justify-content: space-evenly;
       border-radius: 15px;
       float: left;
-      height: 100vh;
       margin-right: 60px;
+      position: relative;
+      transition: top 0.2s ease-out;
     }
 
     .sb-logo {

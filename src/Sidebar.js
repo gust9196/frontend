@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect}from "react";
 import { useNavigate } from 'react-router-dom';
 import './sidebar.css';
 
@@ -6,14 +6,27 @@ import './sidebar.css';
 function Sidebar(props) {
 
   let navigate = useNavigate();
+  const [sidebarTop, setSidebarTop] = useState(0);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setSidebarTop(position);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const handleButtonClick = (endpoint) => {
     navigate(endpoint);
   };
  
   return (
     <>
-      <div className="sb-main-container">
+      <div className="sb-main-container" style={{ top: `${sidebarTop}px` }}>
         <div className="sb-image-wrapper">
           <img className="sb-logo" onClick={() => handleButtonClick('/')} 
             loading="lazy"

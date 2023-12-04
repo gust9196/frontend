@@ -13,7 +13,7 @@ const CustomerList = () => {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:4000/customers')
+    axios.get('http://localhost:4000/customer')
       .then(response => setCustomers(response.data))
       .catch(error => console.error('Fejl ved hentning af kunder:', error));
   }, []);
@@ -26,7 +26,7 @@ const CustomerList = () => {
           <div key={customer.customerId} className="customer-item">
             <div className="customer-details">
               <p><strong>ID:</strong> {customer.customerId}</p>
-              <p><strong>Navn:</strong> {customer.carName}</p>
+              <p><strong>Navn:</strong> {customer.name}</p>
               <p><strong>Adresse:</strong> {customer.address}</p>
               <p><strong>Telefon nummer:</strong> {customer.phoneNumber}</p>
               <p><strong>E-mail:</strong> {customer.email}</p>

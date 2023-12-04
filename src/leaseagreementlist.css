@@ -33,3 +33,22 @@
 .lease-agreement-table tbody tr:nth-child(odd) {
   background-color: #c9c8c8; /* En anden farve for de ulige rækker */
 }
+
+.search-input {
+  width: 30%; /* Adjust width as needed */
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sort-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+th {
+  
+
+}

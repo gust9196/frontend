@@ -55,9 +55,7 @@ function RegisterNewCar() {
                         <input type="text" name="licensePlate" className="div-input" value={carData.licensePlate} onChange={handleChange} />
                         <div className="div-title">Indkøbspris</div>
                         <input type="double" name="price" className="div-input" value={carData.price} onChange={handleChange} />
-                        <button type="submit" className="div-new-car-btn">
-                Register ny bil
-              </button>
+                        <button type="submit" className="div-new-car-btn"> Register ny bil</button>
                     </div>
                     <div className='row-2'>
                         <div className="div-title">Brændstof</div>

@@ -5,11 +5,11 @@ const CarForm = ({ carData }) => {
   return (
     <div className="cf-image-container">
       <img className='cf-img'
-        src={carData.imageLink } 
+        src={carData.urlPhoto} 
       />
       <input 
               type="text" 
-              value={carData.brand} 
+              value={carData.carBrand} 
               readOnly
               className='car-name-input'
               placeholder="Bilmærke"
@@ -25,13 +25,13 @@ const CarForm = ({ carData }) => {
             />
             <input 
               type="text" 
-              value={carData.regNumber} 
+              value={carData.licensePlate} 
               readOnly
               placeholder="Registeringsnummer"
             />
             <input 
-              type="text" 
-              value={carData.buyPrice} 
+              type="double" 
+              value={carData.price} 
               readOnly
               placeholder="Indkøbspris"
             />
@@ -45,13 +45,13 @@ const CarForm = ({ carData }) => {
             />
             <input 
               type="text" 
-              value={carData.km} 
+              value={carData.drivenKilometersAtSubscriptionStart} 
               readOnly
               placeholder="KM kørt ved registering"
             />
             <input 
               type="text" 
-              value={carData.buyDate} 
+              value={carData.dateOfPurchase} 
               readOnly
               placeholder="Indkøbs dato"
             />

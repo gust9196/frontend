@@ -1,52 +1,73 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './registernewcustomer.css';
+import axios from 'axios';
 
 function RegisterNewCustomer() {
+  const [customerData, setCustomerData] = useState({
+    name: '',
+    address: '',
+    phoneNumber: '',
+    email: '',
+  });
 
-    function RegisterNewCustomerForm(props) {
+  const handleChange = (e) => {
+    setCustomerData({ ...customerData, [e.target.name]: e.target.value });
+  };
 
-        return (
-            <>
-                <div className="div-container-nc">
-                    <div className="div-header-title">Register ny kunde</div>
-                    <div className="div-title">Navn</div>
-                    <input type="text" className="div-input-nc" />
-                    <div className="div-title">Adresse</div>
-                    <input type="text" className="div-input-nc" />
-                    <div className="div-title">Telefon nummer</div>
-                    <input type="text" className="div-input-nc" />
-                    <div className="div-title">E-mail</div>
-                    <input type="text" className="div-input-nc" />
-                    <div className="div-new-customer-btn">Register ny kunde</div>
-                </div>
-            </>
-        )
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log('Formularen blev indsendt');
+    try {
+      const response = await axios.post('http://localhost:4000/customer/create', customerData);
+      console.log('kunde oprettet:', response.data);
+      // Tilføj yderligere håndtering efter behov
+    } catch (error) {
+      console.error('Fejl ved oprettelse af kunde:', error);
+      // Tilføj fejlhåndtering efter behov
     }
+  };
 
-        const [name, setName] = useState('');
-        const [address, setAddress] = useState('');
-        const [phoneNumber, setPhoneNumber] = useState('');
-        const [email, setEmail] = useState('');
-
-        const handleSubmit = (e) => {
-            e.preventDefault();
-            // Her vil du håndtere indsendelsen af form data
-            };
-
-        let navigate = useNavigate();
-
-        const handleButtonClick = (endpoint) => {
-            navigate(endpoint);
-        };
-
-            return (
-                <>
-                <div className="nc-main-container">
-                    <RegisterNewCustomerForm/>
-                </div>
-                </>
-            );
+  return (
+    <div className="div-container-nc">
+      <div className="div-header-title">Register ny kunde</div>
+      <div className="div-title">Navn</div>
+      <input
+        type="text"
+        className="div-input-nc"
+        name="name"
+        value={customerData.name}
+        onChange={handleChange}
+      />
+      <div className="div-title">Adresse</div>
+      <input
+        type="text"
+        className="div-input-nc"
+        name="address"
+        value={customerData.address}
+        onChange={handleChange}
+      />
+      <div className="div-title">Telefon nummer</div>
+      <input
+        type="text"
+        className="div-input-nc"
+        name="phoneNumber"
+        value={customerData.phoneNumber}
+        onChange={handleChange}
+      />
+      <div className="div-title">E-mail</div>
+      <input
+        type="text"
+        className="div-input-nc"
+        name="email"
+        value={customerData.email}
+        onChange={handleChange}
+      />
+      <button className="div-new-customer-btn" onClick={handleSubmit}>
+        Register ny kunde
+      </button>
+    </div>
+  );
 }
 
-export default RegisterNewCustomer
+export default RegisterNewCustomer;

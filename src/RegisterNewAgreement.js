@@ -52,21 +52,16 @@ function RegisterNewAgreement() {
             </div>
             <div className="agreement-periode">
                 <h2>Lejeperiode</h2>
-                <select value={leasePeriod} className='custom-select-na' onChange={(e) => setLeasePeriod(e.target.value)}>
-                    <option value="">Vælg lejeperiode</option>
-                    <option value="3 måneder">3 måneder</option>
-                    <option value="6 måneder">6 måneder</option>
-                    <option value="9 måneder">9 måneder</option>
-                    <option value="12 måneder">12 måneder</option>
-                    <option value="15 måneder">15 måneder</option>
-                    <option value="18 måneder">18 måneder</option>
-                    <option value="21 måneder">21 måneder</option>
-                    <option value="24 måneder">24 måneder</option>
-                    <option value="27 måneder">27 måneder</option>
-                    <option value="30 måneder">30 måneder</option>
-                    <option value="33 måneder">33 måneder</option>
-                    <option value="26 måneder">36 måneder</option>
-                </select>
+                <div className='periode-rows'>
+                    <div className='periode-row1'>
+                        <h2>Startdato</h2>
+                    <input type="date" id="start" name="start" />
+                    </div>
+                    <div className='periode-row2'>
+                        <h2>Slutdato</h2>
+                    <input type="date" id="stop" name="stop" />
+                    </div>
+                </div>
                 
             </div>
             </div>

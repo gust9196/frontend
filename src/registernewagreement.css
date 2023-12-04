@@ -60,3 +60,16 @@
     flex: 1;
     padding: 20px;
 }
+
+.periode-rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.periode-rows input{
+    border: 1px solid #3a57e8;
+    border-radius: 4px;
+    width: 200px;
+}

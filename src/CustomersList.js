@@ -25,7 +25,7 @@ const CustomerList = () => {
         {customers.map(customer => (
           <div key={customer.customerId} className="customer-item">
             <div className="customer-details">
-              <p><strong>ID:</strong> {customer.customerID}</p>
+              <p><strong>ID:</strong> {customer.customerId}</p>
               <p><strong>Navn:</strong> {customer.name}</p>
               <p><strong>Adresse:</strong> {customer.address}</p>
               <p><strong>Telefon nummer:</strong> {customer.phoneNumber}</p>

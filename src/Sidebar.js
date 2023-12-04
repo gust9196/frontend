@@ -38,7 +38,7 @@ function Sidebar(props) {
           <button className="sb-description" onClick={() => handleButtonClick('/analytics')}>
             Analytics
           </button>
-          <button className="sb-description" onClick={() => handleButtonClick('/customers')}>
+          <button className="sb-description" onClick={() => handleButtonClick('/customerslist')}>
             Kunder
           </button>
           <button className="sb-description" onClick={() => handleButtonClick('/carlist')}>

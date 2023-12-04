@@ -18,6 +18,7 @@ function RegisterNewCar() {
         setCarData({ ...carData, [e.target.name]: e.target.value });
     };
 
+
     return (
         <div className="re-main-container">
             <div className="div-container">

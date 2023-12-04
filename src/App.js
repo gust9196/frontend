@@ -12,6 +12,7 @@ import CarAdmin from "./CarAdmin";
 import CarList from "./CarList";
 import LeaseAgreementList from "./LeaseAgreementList";
 import NewsFeed from "./NewsFeed";
+import CustomerList from "./CustomersList";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
           <Route path="/carlist" element={<CarList />} />
           <Route path="/leaseagreementlist" element={<LeaseAgreementList />} />
           <Route path="/newsfeed" element={<NewsFeed />} />
-
+          <Route path="/customerslist" element={<CustomerList />} />
         </Routes>
         </div>
         </div>

@@ -1,0 +1,35 @@
+.customer-list-container {
+    max-width: 100vw;
+    margin-right: 10px;
+    background-color: transparent;
+  }
+  
+  .customer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .customer-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+  }
+  
+  .customer-details {
+    margin-top: 10px;
+  }
+
+  .customer-list-container p{
+    color: #3a3838;
+    background-color: transparent;
+    border: 1px solid transparent;
+    align-self: start;
+    font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .car-list-container h2{
+    font-size: 28px;
+  }

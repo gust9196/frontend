@@ -53,58 +53,77 @@ const CreateDamage = () => {
       .catch(error => console.error('Fejl ved oprettelse af skade:', error));
   };
 
-  return (
-    <div className="bodyDamage">
-      <div className="container">
-        <h2 className="title">Opret Skade</h2>
-        <form className="form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label className="form-label">
-              Vælg bil:
-              <select className="form-select" value={selectedCar} onChange={(e) => setSelectedCar(e.target.value)}>
-                <option value="">Vælg en bil</option>
-                {cars.map(car => (
-                  <option key={car.carId} value={car.carId}>{car.carBrand} - {car.model}</option>
-                ))}
-              </select>
-            </label>
-          </div>
-          <div className="form-group">
-            <label className="form-label">
-              Vælg leaseaftale:
-              <select className="form-select" value={selectedLease} onChange={(e) => setSelectedLease(e.target.value)}>
-                <option value="">Vælg en leaseaftale</option>
-                {leases.map(lease => (
-                  <option key={lease.leaseId} value={lease.leaseId}>{lease.customer.name} - {lease.car.model} - {lease.endDate}</option>
-                ))}
-              </select>
-            </label>
-          </div>
-          <div className="form-group">
-            <label className="form-label">
-              Beskrivelse:
-              <textarea className="form-textarea" rows="4" value={description} onChange={(e) => setDescription(e.target.value)} />
-            </label>
-          </div>
-          <div className="form-group">
-            <label className="form-label">
-              Registreringsdato:
-              <input className="form-input" type="text" value={registrationDate} onChange={(e) => setRegistrationDate(e.target.value)} />
-            </label>
-          </div>
-          <div className="form-group">
-            <label className="form-label">
-              Reparationsomkostninger:
-              <input className="form-input" type="text" value={repairCost} onChange={(e) => setRepairCost(e.target.value)} />
-            </label>
-          </div>
-          <div className="form-group">
-            <button className="form-button" type="submit">Opret Skade</button>
-          </div>
-        </form>
-      </div>
+  
+
+return (
+  <div className="body-damagerepair">
+    <div className="container-damagerepair">
+      <h2 className="title-damagerepair">Opret Skade</h2>
+      <form className="form-damagerepair" onSubmit={handleSubmit}>
+        <div className="form-group-damagerepair">
+          <label className="form-label-damagerepair">Vælg bil:</label>
+          <select
+            className="form-select-damagerepair"
+            value={selectedCar}
+            onChange={(e) => setSelectedCar(e.target.value)}
+          >
+            <option value="">Vælg en bil</option>
+            {cars.map((car) => (
+              <option key={car.carId} value={car.carId}>
+                {car.carBrand} - {car.model}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="form-group-damagerepair">
+          <label className="form-label-damagerepair">Vælg leaseaftale:</label>
+          <select
+            className="form-select-damagerepair"
+            value={selectedLease}
+            onChange={(e) => setSelectedLease(e.target.value)}
+          >
+            <option value="">Vælg en leaseaftale</option>
+            {leases.map((lease) => (
+              <option key={lease.leaseId} value={lease.leaseId}>
+                {lease.customer.name} - {lease.car.model} - {lease.endDate}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="form-group-damagerepair">
+          <label className="form-label-damagerepair">Beskrivelse:</label>
+          <textarea
+            className="form-textarea-damagerepair"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+        </div>
+        <div className="form-group-damagerepair">
+          <label className="form-label-damagerepair">Registreringsdato:</label>
+          <input
+            className="form-input-damagerepair"
+            type="text"
+            value={registrationDate}
+            onChange={(e) => setRegistrationDate(e.target.value)}
+          />
+        </div>
+        <div className="form-group-damagerepair">
+          <label className="form-label-damagerepair">Reparationsomkostninger:</label>
+          <input
+            className="form-input-damagerepair"
+            type="text"
+            value={repairCost}
+            onChange={(e) => setRepairCost(e.target.value)}
+          />
+        </div>
+        <button className="form-button-damagerepair" type="submit">
+          Opret Skade
+        </button>
+      </form>
     </div>
-  );
+  </div>
+);
+
   
   
   

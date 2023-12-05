@@ -1,12 +1,8 @@
 /* damagerepair.css */
 
-bodyDamage {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
-.body {
+
+.body-damagerepair {
   background-color: #f0f0f0;
   display: flex;
   justify-content: center;
@@ -14,7 +10,7 @@ bodyDamage {
   height: 100vh;
 }
 
-.container {
+.container-damagerepair {
   max-width: 600px;
   background-color: #fff;
   padding: 20px;
@@ -22,29 +18,29 @@ bodyDamage {
   border-radius: 8px;
 }
 
-.title {
+.title-damagerepair {
   color: #333;
   text-align: center;
 }
 
-.form {
+.form-damagerepair {
   display: grid;
   grid-gap: 20px;
 }
 
-.form-group {
+.form-group-damagerepair {
   margin-bottom: 20px;
 }
 
-.form-label {
+.form-label-damagerepair {
   display: block;
   margin-bottom: 5px;
   color: #555;
 }
 
-.form-select,
-.form-textarea,
-.form-input {
+.form-select-damagerepair,
+.form-textarea-damagerepair,
+.form-input-damagerepair {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -53,11 +49,11 @@ bodyDamage {
   font-size: 14px;
 }
 
-.form-textarea {
+.form-textarea-damagerepair {
   resize: vertical;
 }
 
-.form-button {
+.form-button-damagerepair {
   background-color: #4caf50;
   color: #fff;
   padding: 10px 15px;
@@ -67,6 +63,6 @@ bodyDamage {
   font-size: 16px;
 }
 
-.form-button:hover {
+.form-button-damagerepair:hover {
   background-color: #45a049;
 }

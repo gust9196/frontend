@@ -41,12 +41,17 @@ function RegisterNewAgreement() {
             <div className="registernewagreement-container">
             <div className="search-container">
             <h2>Søg kunde</h2>
+            <div className="customer-rows">
             <div className="customer-search">
             <input type="text" value={searchTerm} onChange={handleChange} placeholder="Søg kunde..." />
             <div>
                 {suggestions.map(customer => (
                     <div key={customer.id}>{customer.name} - {customer.email}</div>
                 ))}
+            </div>
+            </div>
+            <div className="customer-find">
+            <button className='reg-new-customer-btn' onClick={() => handleButtonClick('/new-customer')}>Register ny kunde</button>
             </div>
             </div>
             </div>

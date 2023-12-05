@@ -54,48 +54,60 @@ const CreateDamage = () => {
   };
 
   return (
-    <div>
-      <h2>Opret Skade</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Vælg bil:
-          <select value={selectedCar} onChange={(e) => setSelectedCar(e.target.value)}>
-            <option value="">Vælg en bil</option>
-            {cars.map(car => (
-              <option key={car.carId} value={car.carId}>{car.carBrand} - {car.model}</option>
-            ))}
-          </select>
-        </label>
-        <br />
-        <label>
-          Vælg leaseaftale:
-          <select value={selectedLease} onChange={(e) => setSelectedLease(e.target.value)}>
-            <option value="">Vælg en leaseaftale</option>
-            {leases.map(lease => (
-              <option key={lease.leaseId} value={lease.leaseId}>{lease.startDate} - {lease.endDate}</option>
-            ))}
-          </select>
-        </label>
-        <br />
-        <label>
-          Beskrivelse:
-          <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
-        </label>
-        <br />
-        <label>
-          Registreringsdato:
-          <input type="text" value={registrationDate} onChange={(e) => setRegistrationDate(e.target.value)} />
-        </label>
-        <br />
-        <label>
-          Reparationsomkostninger:
-          <input type="text" value={repairCost} onChange={(e) => setRepairCost(e.target.value)} />
-        </label>
-        <br />
-        <button type="submit">Opret Skade</button>
-      </form>
+    <div className="bodyDamage">
+      <div className="container">
+        <h2 className="title">Opret Skade</h2>
+        <form className="form" onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label className="form-label">
+              Vælg bil:
+              <select className="form-select" value={selectedCar} onChange={(e) => setSelectedCar(e.target.value)}>
+                <option value="">Vælg en bil</option>
+                {cars.map(car => (
+                  <option key={car.carId} value={car.carId}>{car.carBrand} - {car.model}</option>
+                ))}
+              </select>
+            </label>
+          </div>
+          <div className="form-group">
+            <label className="form-label">
+              Vælg leaseaftale:
+              <select className="form-select" value={selectedLease} onChange={(e) => setSelectedLease(e.target.value)}>
+                <option value="">Vælg en leaseaftale</option>
+                {leases.map(lease => (
+                  <option key={lease.leaseId} value={lease.leaseId}>{lease.customer.name} - {lease.car.model} - {lease.endDate}</option>
+                ))}
+              </select>
+            </label>
+          </div>
+          <div className="form-group">
+            <label className="form-label">
+              Beskrivelse:
+              <textarea className="form-textarea" rows="4" value={description} onChange={(e) => setDescription(e.target.value)} />
+            </label>
+          </div>
+          <div className="form-group">
+            <label className="form-label">
+              Registreringsdato:
+              <input className="form-input" type="text" value={registrationDate} onChange={(e) => setRegistrationDate(e.target.value)} />
+            </label>
+          </div>
+          <div className="form-group">
+            <label className="form-label">
+              Reparationsomkostninger:
+              <input className="form-input" type="text" value={repairCost} onChange={(e) => setRepairCost(e.target.value)} />
+            </label>
+          </div>
+          <div className="form-group">
+            <button className="form-button" type="submit">Opret Skade</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
+  
+  
+  
 };
 
 export default CreateDamage;

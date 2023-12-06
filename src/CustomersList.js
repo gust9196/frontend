@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './customerslist.css';
 
+
+
 const CustomerList = () => {
   const [customers, setCustomers] = useState([]);
 
@@ -18,6 +20,7 @@ const CustomerList = () => {
       .then(response => setCustomers(response.data))
       .catch(error => console.error('Fejl ved hentning af kunder:', error));
   }, []);
+
 
   return (
     <div className="customer-list-container">

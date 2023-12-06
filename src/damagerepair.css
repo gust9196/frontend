@@ -3,9 +3,9 @@
 
 
 .body-damagerepair {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   height: 100vh;
 }
@@ -54,7 +54,7 @@
 }
 
 .form-button-damagerepair {
-  background-color: #4caf50;
+  background-color: #3a57e8;
   color: #fff;
   padding: 10px 15px;
   border: none;
@@ -64,5 +64,5 @@
 }
 
 .form-button-damagerepair:hover {
-  background-color: #45a049;
+  background-color: #486dda;
 }

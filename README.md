@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Systemudvikling i forretningsmæssig kontekst - BilAbonnement K.W. Bruun
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![BilAbonnement Logo](https://res.cloudinary.com/digital-interdan-bilabonnement/image/upload/v1621580685/Logos/BILABONNEMENT_rgb_mmahqw.png)
 
-## Available Scripts
+***
 
-In the project directory, you can run:
+**Hey!** 👋 Velkommen til vores 3. tværfalige projekt på 3. Semester på IT Arkitektur på Københavns Erhvervsakademi.
 
-### `npm start`
+## 📖Oversigt
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ - Introduktion
+ - Funktioner
+ - Formål
+ - Medlemmere
+ - Licens
+ - Contribute
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 👀Introduktion
 
-### `npm test`
+BilAbonnement Bilabonnement er en del af K.W. Bruun Koncernen - BilAbonnement udlejer biler på mellem 1-36 mdr.
+## 🎱Funktioner
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+TBA
 
-### `npm run build`
+## 🤔Formål
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 👨‍👨‍👦‍👦Medlemmere (Gruppe 5)
 
-### `npm run eject`
+ - 😎Arne Fogh `@arnefogh` 
+ - 🤠Gustav Frederik S.  `@gust9196`
+ - 🌞Mads Runge `@madsrunge`
+ - 🧐Nicklas Sienczak `@nicklassienczak`
+ 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Hvis du/i vil i kontakt med os kan du lave et mention ved at tagge os med `@` plus brugernavnet. Så vil vi få en notifikation, så vi kan hjælpe dig. Ovenover kan ses vores brugernavne. Ja Tak, Selv tak🥰
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚖️Licens 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Dette projekt er licenseret under en [Creative Commons Kreditering-Ikkekommerciel 4.0 International-licens](http://creativecommons.org/licenses/by-nc/4.0/).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## [🕹️Contribute](https://github.com/nicklassienczak/BeSammen/blob/e789eac970a3cecceecea62ed0bf839091fd94b6/Contribute.md)
+Se vores contribute fil for mere information! Kom glad🦆
+[Contribute fil](https://github.com/nicklassienczak/BeSammen/blob/e789eac970a3cecceecea62ed0bf839091fd94b6/Contribute.md)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

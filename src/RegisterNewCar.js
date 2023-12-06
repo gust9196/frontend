@@ -23,7 +23,7 @@ function RegisterNewCar() {
         e.preventDefault();
         console.log('Formularen blev indsendt');
         try {
-          const response = await axios.post('http://localhost:4000/car/create', carData);
+          const response = await axios.post('https://babackenddbapi.azurewebsites.net/car/create', carData);
           console.log('Bil oprettet:', response.data);
           // Tilføj yderligere håndtering efter behov
         } catch (error) {

@@ -19,7 +19,7 @@ function RegisterNewCustomer() {
     e.preventDefault();
     console.log('Formularen blev indsendt');
     try {
-      const response = await axios.post('http://localhost:4000/customer/create', customerData);
+      const response = await axios.post('https://babackenddbapi.azurewebsites.net/customer/create', customerData);
       console.log('kunde oprettet:', response.data);
       // Tilføj yderligere håndtering efter behov
     } catch (error) {

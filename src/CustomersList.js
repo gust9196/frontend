@@ -16,7 +16,7 @@ const CustomerList = () => {
   };
 */
   useEffect(() => {
-    axios.get('http://localhost:4000/customer')
+    axios.get('https://babackenddbapi.azurewebsites.net/customer')
       .then(response => setCustomers(response.data))
       .catch(error => console.error('Fejl ved hentning af kunder:', error));
   }, []);

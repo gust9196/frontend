@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./damagerepair.css"
+import DamageList from './DamageList';
+
 
 const CreateDamage = () => {
   const [cars, setCars] = useState([]);
@@ -120,8 +122,12 @@ return (
           Opret Skade
         </button>
       </form>
+      <DamageList />
     </div>
+     
   </div>
+   
+   
 );
 
   

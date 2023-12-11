@@ -5,8 +5,13 @@ import './carlist.css';
 
 const CarList = () => {
   const [cars, setCars] = useState([]);
+  const [selectedCar, setSelectedCar] = useState(null);
 
   let navigate = useNavigate();
+
+  const handleCarSelect = (car) => {
+    setSelectedCar(car); // Opdater state med valgt bil
+  };
 
   const handleButtonClick = (endpoint) => {
     navigate(endpoint);
@@ -26,7 +31,7 @@ const CarList = () => {
       </div>
       <div className="car-grid">
         {cars.map(car => (
-          <div key={car.carId} className="car-item">
+          <div key={car.carId} className={`car-item ${selectedCar === car ? 'selected' : ''}`} onClick={() => handleCarSelect(car)}>
             <img src={car.urlPhoto} alt={`${car.carBrand} ${car.model}`} className="car-image" />
             <div className="car-details">
               <p><strong>ID:</strong> {car.carId}</p>

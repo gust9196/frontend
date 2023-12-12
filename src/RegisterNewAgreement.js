@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react'
-import { useNavigate } from 'react-router-dom';
 import './registernewagreement.css';
-import CarList from './CarList';
+import CarListForm from './CarListForm';
 import SearchCustomerComponent from './SearchCustomerComponent';
 import ChoosePeriod from './ChoosePeriod';
 
@@ -24,7 +23,7 @@ function RegisterNewAgreement() {
         <>
          {currentStep === 1 && <SearchCustomerComponent goToNextStep={goToNextStep} />}
           {currentStep === 2 && <ChoosePeriod goToNextStep={goToNextStep} />}
-          {currentStep === 3 && <CarList goToNextStep={goToNextStep} />}
+          {currentStep === 3 && <CarListForm goToNextStep={goToNextStep} />}
         </>
         
   )

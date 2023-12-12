@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './carlist.css';
 
-const CarList = () => {
+const CarListForm = ({ goToNextStep }) => {
   const [cars, setCars] = useState([]);
   const [selectedCar, setSelectedCar] = useState(null);
 
-  let navigate = useNavigate();
+
 
   const handleCarSelect = (car) => {
     setSelectedCar(car); // Opdater state med valgt bil
   };
 
-  const handleButtonClick = (endpoint) => {
-    navigate(endpoint);
+  const handleNextButtonClick = () => {
+    if (!selectedCar) {
+      alert("Vælg venligst en bil før du fortsætter.");
+    } else {
+        goToNextStep();
+    }
   };
 
   useEffect(() => {
@@ -25,10 +28,10 @@ const CarList = () => {
 
   return (
     <>
-    <div className="div-header-title-cl">
-      <h2>Liste over biler</h2>
-      <button className="div-new-car-btn-cl" onClick={() => handleButtonClick('/new-car')}>Register ny bil</button>
-      </div>
+    <div className='cc-flex-container'>
+    <div className="cc-div-2">Register ny aftale</div>
+    <div onClick={handleNextButtonClick} className="cc-next-btn">Næste</div>
+    </div>
       <div className="car-list-container">
       <div className="car-grid">
         {cars.map(car => (
@@ -51,4 +54,4 @@ const CarList = () => {
   );
 };
 
-export default CarList;
+export default CarListForm;

@@ -2,6 +2,9 @@
 
 ![BilAbonnement Logo](https://res.cloudinary.com/digital-interdan-bilabonnement/image/upload/v1621580685/Logos/BILABONNEMENT_rgb_mmahqw.png)
 
+[Link til frontend](https://gust9196.github.io/frontend/)
+
+
 ***
 
 **Hey!** 👋 Velkommen til vores 3. tværfalige projekt på 3. Semester på IT Arkitektur på Københavns Erhvervsakademi.
@@ -15,16 +18,26 @@
  - Licens
  - Contribute
 
+## ❓Problemformulering
+Hvordan kan Bilabonnement.dk effektivisere og automatisere deres nuværende forretningspro-cesser, som i øjeblikket primært håndteres manuelt i Excel, for at skabe en mere strømlinet og fejlfri oplevelse for både kunder og interne interessenter? 
+
 ## 👀Introduktion
 
 BilAbonnement Bilabonnement er en del af K.W. Bruun Koncernen - BilAbonnement udlejer biler på mellem 1-36 mdr.
 ## 🎱Funktioner
 
-TBA
+Brugerne af systemet kan følgende:
+ - Registere nye leasingaftaler, samt se aktive leasingaftaler.
+ - Registere nye biler, samt se aktive biler.
+ - Registere nye kunder, samt se kundelister.
+ - Se dashboards over status.
+ - Registere skader og udbedring på biler.
+   
+
 
 ## 🤔Formål
 
-
+Formået med dette projekt er at effektivisere og automatisere Bilabonnements nuværende forretningsprocesser.
 
 ## 👨‍👨‍👦‍👦Medlemmere (Gruppe 5)
 

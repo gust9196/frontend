@@ -13,6 +13,7 @@ import CarList from "./CarList";
 import LeaseAgreementList from "./LeaseAgreementList";
 import NewsFeed from "./NewsFeed";
 import CustomerList from "./CustomersList";
+import DeliveryPoint from "./DeliveryPoint";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/leaseagreementlist" element={<LeaseAgreementList />} />
           <Route path="/newsfeed" element={<NewsFeed />} />
           <Route path="/customerslist" element={<CustomerList />} />
+          <Route path="/deliverypoint" element={<DeliveryPoint />} />
         </Routes>
         </div>
         </div>

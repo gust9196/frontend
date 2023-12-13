@@ -21,7 +21,7 @@ function RegisterNewAgreement() {
 
   return (
         <>
-         {currentStep === 1 && <SearchCustomerComponent goToNextStep={goToNextStep} />}
+          {currentStep === 1 && <SearchCustomerComponent goToNextStep={goToNextStep} />}
           {currentStep === 2 && <ChoosePeriod goToNextStep={goToNextStep} />}
           {currentStep === 3 && <CarListForm goToNextStep={goToNextStep} />}
         </>

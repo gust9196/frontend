@@ -64,6 +64,7 @@ function RegisterNewCar() {
                               <option value="El">El</option>
                               <option value="Benzin">Benzin</option>
                               <option value="Hybrid">Hybrid</option>
+                              <option value="Diesel">Diesel</option>
                           </select>
                         <div className="div-title">KM kørt ved registering</div>
                         <input type="text" name="drivenKilometersAtSubscriptionStart" className="div-input" value={carData.drivenKilometersAtSubscriptionStart} onChange={handleChange} />

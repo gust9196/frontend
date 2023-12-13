@@ -20,31 +20,31 @@ function RegisterNewAgreement() {
     const goToNextStep = () => {
       setCurrentStep(currentStep + 1);
   };
-
+  
   const handleCustomerSelection = (customer) => {
     setCustomerData(customer);
     goToNextStep();
-};
+  };
 
-const handlePeriodSelection = (period) => {
-  setPeriodData(period);
-  goToNextStep();
-};
+  const handlePeriodSelection = (period) => {
+    setPeriodData(period);
+    goToNextStep();
+  };
 
-const handleCarSelection = (car) => {
-  setSelectedCar(car);
-  goToNextStep();
-};
+  const handleCarSelection = (car) => {
+    setSelectedCar(car);
+    goToNextStep();
+  };
 
-const handleDeliveryPointSelection = (pickup, dropoff) => {
-  setDeliveryPointData({ pickupLocation: pickup, dropoffLocation: dropoff });
-  goToNextStep();
-};
+  const handleDeliveryPointSelection = (pickup, dropoff) => {
+    setDeliveryPointData({ pickupLocation: pickup, dropoffLocation: dropoff });
+    goToNextStep();
+  };
 
-const handleKmSelection = (km) => {
-  setAgreedKm(km);
-  goToNextStep();
-};
+  const handleKmSelection = (km) => {
+    setAgreedKm(km);
+    goToNextStep();
+  };
 
   return (
         <>
@@ -54,11 +54,11 @@ const handleKmSelection = (km) => {
           {currentStep === 4 && <DeliveryPoint onSelectDeliveryPoint={handleDeliveryPointSelection} goToNextStep={goToNextStep} />}
           {currentStep === 5 && <AgreedKm onSelectKm={handleKmSelection} goToNextStep={goToNextStep} />}
           {currentStep === 6 && <Agreement 
-                                customerData={customerData} 
-                                periodData={periodData} 
-                                selectedCar={selectedCar} 
-                                deliveryPointData={deliveryPointData} 
-                                agreedKm={agreedKm} />}
+          customerData={customerData} 
+          periodData={periodData} 
+          selectedCar={selectedCar} 
+          deliveryPointData={deliveryPointData} 
+          agreedKm={agreedKm} />}
         </>
         
   )

@@ -24,6 +24,7 @@ function DeliveryPoint({ goToNextStep, onSelectDeliveryPoint }) {
         } else {
             onSelectDeliveryPoint(getLocationAddressById(pickupLocations, pickupLocation), getLocationAddressById(dropoffLocations, dropoffLocation));
             goToNextStep();
+            console.log(pickupLocations,dropoffLocations)
         }
     };
 

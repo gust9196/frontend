@@ -11,6 +11,7 @@ const CarListForm = ({ goToNextStep, onSelectCar }) => {
   const handleCarSelect = (car) => {
     setSelectedCar(car);
     onSelectCar(car); // Ny linje til at opdatere selectedCar i RegisterNewAgreement
+    console.log(car)
 };
 
   const handleNextButtonClick = () => {
@@ -19,6 +20,7 @@ const CarListForm = ({ goToNextStep, onSelectCar }) => {
     } else {
       onSelectCar(selectedCar); // Opdater dette til at sikre, at selectedCar er sat
       goToNextStep();
+      console.log(selectedCar);
     }
   };
 

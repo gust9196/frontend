@@ -21,6 +21,7 @@ function App() {
       <Router>
         <div className="app-container">
         <Sidebar />
+        <NewsFeed/>
         <div className="sidebar-content-container">
         <Routes>
           <Route path="/login" element={<LoginForm />} />

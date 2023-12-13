@@ -15,12 +15,12 @@ const CreateDamage = () => {
 
   useEffect(() => {
     // Hent biler fra databasen ved komponentens indlæsning
-    axios.get('https://babackenddbapi.azurewebsites.net/car')
+    axios.get('http://localhost:4000/car')
       .then(response => setCars(response.data))
       .catch(error => console.error('Fejl ved hentning af biler:', error));
 
     // Hent leaseaftaler fra databasen ved komponentens indlæsning
-    axios.get('https://babackenddbapi.azurewebsites.net/leaseAgreement')
+    axios.get('http://localhost:4000/leaseAgreement')
       .then(response => setLeases(response.data))
       .catch(error => console.error('Fejl ved hentning af leaseaftaler:', error));
   }, []); // Tomt array betyder, at useEffect kun køres ved komponentens indlæsning
@@ -42,7 +42,7 @@ const CreateDamage = () => {
     };
 
     // Send POST-anmodning til backend
-    axios.post('https://babackenddbapi.azurewebsites.net/damages/create', newDamage)
+    axios.post('http://localhost:4000/damages/create', newDamage)
       .then(response => {
         console.log('Skade oprettet:', response.data);
         // Nulstil formular efter oprettelse

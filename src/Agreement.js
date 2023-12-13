@@ -31,6 +31,44 @@ function Agreement({ customerData, periodData, selectedCar, deliveryPointData, a
       };
 
 
+      const handleCreateLeaseAgreement = async () => {
+        try {
+          const backendEndpoint = 'http://localhost:4000/leaseAgreement/create';
+    
+          // Opret objektet, du vil sende til serveren
+          const leaseAgreementData = {
+            customer: {
+              id: customerData.customerID,
+            },
+            car: {
+              id: selectedCar.carId,
+            },
+            pickupLocation: {
+              id: deliveryPointData.pickupLocation,
+            },
+            dropoffLocation: {
+              id: deliveryPointData.dropoffLocation,
+            },
+            startDate: periodData.startDate,
+            endDate: periodData.endDate,
+            monthlySubscriptionPrice: totalPrice,
+            agreedSubscriptionKM: agreedKm,
+            kmDriven: 0, 
+          };
+    
+          // Udskriv objektet før du sender det
+          console.log('Lease Agreement Data:', leaseAgreementData);
+    
+          const response = await axios.post(backendEndpoint, leaseAgreementData);
+    
+          console.log('Leasingaftale oprettet:', response.data);
+          // Tilføj logik her, f.eks. vise en bekræftelsesbesked til brugeren.
+        } catch (error) {
+          console.error('Fejl ved oprettelse af leasingaftale:', error);
+          // Håndter fejl, f.eks. vis en fejlmeddelelse til brugeren.
+        }
+      };
+
   return (
     <>
     <div className='cc-flex-container'>

@@ -9,7 +9,7 @@ const DamageList = () => {
 
   useEffect(() => {
     // Hent skadeliste fra backend ved komponentens indlæsning
-    axios.get('https://babackenddbapi.azurewebsites.net/damages')
+    axios.get('http://localhost:4000/damages')
       .then(response => setDamages(response.data))
       .catch(error => console.error('Fejl ved hentning af skadeliste:', error));
   }, []); 

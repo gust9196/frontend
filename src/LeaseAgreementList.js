@@ -13,7 +13,7 @@ const LeaseAgreementList = () => {
 
 
   useEffect(() => {
-    axios.get('https://babackenddbapi.azurewebsites.net/leaseAgreement')
+    axios.get('http://localhost:4000/leaseAgreement')
       .then(response => setLeaseAgreements(response.data))
       .catch(error => console.error('Fejl ved hentning af leasingaftaler:', error));
   }, []);

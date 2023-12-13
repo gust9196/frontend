@@ -13,6 +13,7 @@ import CarList from "./CarList";
 import LeaseAgreementList from "./LeaseAgreementList";
 import NewsFeed from "./NewsFeed";
 import CustomerList from "./CustomersList";
+import Agreement from "./Agreement";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <div className="sidebar-content-container">
         <Routes>
           <Route path="/" element={<NewsFeed />} />
+          <Route path="/agreement" element={<Agreement />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/new-agreement" element={<RegisterNewAgreement />} />
           <Route path="/new-car" element={<RegisterNewCar />} />

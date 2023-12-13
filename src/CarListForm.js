@@ -2,21 +2,23 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './carlist.css';
 
-const CarListForm = ({ goToNextStep }) => {
+const CarListForm = ({ goToNextStep, onSelectCar }) => {
   const [cars, setCars] = useState([]);
   const [selectedCar, setSelectedCar] = useState(null);
 
 
 
   const handleCarSelect = (car) => {
-    setSelectedCar(car); // Opdater state med valgt bil
-  };
+    setSelectedCar(car);
+    onSelectCar(car); // Ny linje til at opdatere selectedCar i RegisterNewAgreement
+};
 
   const handleNextButtonClick = () => {
     if (!selectedCar) {
       alert("Vælg venligst en bil før du fortsætter.");
     } else {
-        goToNextStep();
+      onSelectCar(selectedCar); // Opdater dette til at sikre, at selectedCar er sat
+      goToNextStep();
     }
   };
 

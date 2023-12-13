@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 
-function AgreedKm({ goToNextStep }) {
+function AgreedKm({ goToNextStep, onSelectKm }) {
     const [selectedKm, setSelectedKm] = useState('');
 
     const kmOptions = [
-        "500 km", "1.500 km", "3.000 km", "5.000 km", "10.000 km", 
-        "15.000 km", "20.000 km", "25.000 km", "30.000 km", "40.000 km"
+        "500", "1500", "3000", "5000", "10000", 
+        "15000", "20000", "25000", "30000", "40000"
     ];
 
     const handleNextButtonClick = () => {
         if (!selectedKm) {
             alert("Vælg venligst et antal kilometer.");
         } else {
+            onSelectKm(selectedKm); // Ny linje til at opdatere agreedKm i RegisterNewAgreement
             goToNextStep();
         }
     };

@@ -36,6 +36,7 @@ function SearchCustomerComponent({ goToNextStep, onSelectCustomer }) {
       setSelectedCustomer(customer);
       setSearchTerm('');
       setSuggestions([]);
+      onSelectCustomer(customer); // Ny linje til at opdatere customerData i RegisterNewAgreement
   };
 
   const handleNextButtonClick = () => {

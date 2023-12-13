@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './chooseperiod.css';
 
-function ChoosePeriod({ goToNextStep }) {
+function ChoosePeriod({ goToNextStep, onSelectPeriod }) {
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
   const [error, setError] = useState('');
@@ -20,6 +20,7 @@ function ChoosePeriod({ goToNextStep }) {
     if (!startDate || !endDate) {
         alert("Vælg venligst både en startdato og en slutdato før du fortsætter.");
     } else if (validateDates()) {
+        onSelectPeriod({ startDate, endDate }); // Ny linje til at opdatere periodData i RegisterNewAgreement
         goToNextStep();
     }
 };

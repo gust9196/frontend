@@ -22,10 +22,10 @@ function App() {
       <Router>
         <div className="app-container">
         <Sidebar />
-        <NewsFeed/>
         <div className="sidebar-content-container">
         <Routes>
           <Route path="/login" element={<LoginForm />} />
+          <Route path="/" element={<><NewsFeed /></>} />
           <Route path="/new-agreement" element={<RegisterNewAgreement />} />
           <Route path="/new-car" element={<RegisterNewCar />} />
           <Route path="/new-customer" element={<RegisterNewCustomer />} />

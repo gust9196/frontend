@@ -1,0 +1,28 @@
+.a-main-container {
+    display: flex;
+  }
+  
+  .analytics-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer billederne i midten */
+  }
+  
+  .analytics-image {
+    width: 100%;
+    height: auto;
+    max-width: 1000px; /* Øg den maksimale bredde efter behov */
+    max-height: 600px; /* Øg den maksimale højde efter behov */
+    border: 2px solid #ddd; /* Tilføj en 2px grænse omkring billedet */
+    border-radius: 10px; /* Tilføj afrundede kanter for et mere elegant look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tilføj en svag skyggeeffekt */
+    margin-bottom: 20px; /* Øg afstanden mellem billeder */
+  
+    /* Anvend en hover-effekt */
+    &:hover {
+      transform: scale(1.1); /* Forstør billedet ved hover */
+    }
+  }
+  
+  /* Tilpas andre styling-regler efter dine behov */
+  

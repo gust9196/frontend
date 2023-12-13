@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './newsfeed.css'; // Import the CSS file
 
 const NewsFeed = () => {
   const [news, setNews] = useState([]);
@@ -30,17 +31,21 @@ const NewsFeed = () => {
     }));
   };
 
-
   return (
-    <div>
+    <div className="news-feed-container">
       <h2>Nyheder fra FDM</h2>
-      <ul>
+      <ul className="news-list">
         {news.map((item, index) => (
-          <li key={index}>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
+          <li key={index} className="news-item">
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="news-title"
+            >
               {item.title}
             </a>
-            <p>{item.description}</p>
+            <p className="news-description">{item.description}</p>
           </li>
         ))}
       </ul>
@@ -49,3 +54,4 @@ const NewsFeed = () => {
 };
 
 export default NewsFeed;
+

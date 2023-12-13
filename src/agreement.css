@@ -1,0 +1,52 @@
+.agreement-container, .agreement-container-car {
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+
+.agreementInfo {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.agreementInfo strong{
+    font-weight: 600;
+    color: #5c5c5c;
+
+}
+
+.car-image-agreement {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.agreement-header {
+    color: #5c5c5c;
+    white-space: nowrap;
+    font: 600 40px Inter, sans-serif;
+    margin-bottom: 30px;
+  }
+
+  .agreementInfo-price {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+    color: #3a57e8;
+  }
+
+  .agreementInfo-price strong {
+    font-weight: 600;
+    color: #5c5c5c;
+    background-color: #f9f9f9;
+   
+    margin-bottom: 10px;
+  }

@@ -4,8 +4,8 @@ import axios from 'axios';
 
 
 function Agreement({ customerData, periodData, selectedCar, deliveryPointData, agreedKm }) {
-
     const [totalPrice, setTotalPrice] = useState(0);
+    const [monthlyPrice, setMonthlyPrice] = useState(0);
 
     useEffect(() => {
         const calculatePrice = () => {
@@ -13,11 +13,13 @@ function Agreement({ customerData, periodData, selectedCar, deliveryPointData, a
           const monthlyPayment = selectedCar.price / 120;
           const durationInMonths = getDurationInMonths(periodData.startDate, periodData.endDate);
           const kmPrice = fuelPrices[selectedCar.fuel] * agreedKm;
-          return (monthlyPayment * durationInMonths) + kmPrice;
+          const total = (monthlyPayment * durationInMonths) + kmPrice;
+          setTotalPrice(total);
+          setMonthlyPrice(total / durationInMonths);
         };
     
         if (selectedCar && periodData && agreedKm) {
-          setTotalPrice(calculatePrice());
+          calculatePrice();
         }
       }, [selectedCar, periodData, agreedKm]);
     
@@ -37,28 +39,32 @@ function Agreement({ customerData, periodData, selectedCar, deliveryPointData, a
     </div>
     <div className="choose-customer-container">
       <div className="cc-div-3">
-        <div className="cc-div-4">Aftale</div>
+        <div className="cc-div-4">Aftaleoversigt</div>
         <div className="cc-div-5">
           <div className="cc-div-6">
             <div className="cc-column">
               <div className="cc-div-7">
-                <div className="cc-div-8">Aftale info</div>
                 <div className="agreement-container">
-                <h1>Aftaleoversigt</h1>
-                <div><strong>Kunde:</strong> {customerData && `${customerData.name} (Email: ${customerData.email})`}</div>
-                <div><strong>Periode:</strong> Fra {periodData && periodData.startDate} til {periodData && periodData.endDate}</div>
-                <div><strong>Afhentningssted:</strong> {deliveryPointData && deliveryPointData.pickupLocation}</div>
-                <div><strong>Afleveringssted:</strong> {deliveryPointData && deliveryPointData.dropoffLocation}</div>
-                <div><strong>Aftalte Kilometer:</strong> {agreedKm} km</div>
+                <div className="agreement-header">Aftale info</div>
+                <div className='agreementInfo'><strong>Kunde:</strong> {customerData && `${customerData.name} (Email: ${customerData.email})`}</div>
+                <div className='agreementInfo'><strong>Periode:</strong> Fra {periodData && periodData.startDate} til {periodData && periodData.endDate}</div>
+                <div className='agreementInfo'><strong>Afhentningssted:</strong> {deliveryPointData && deliveryPointData.pickupLocation}</div>
+                <div className='agreementInfo'><strong>Afleveringssted:</strong> {deliveryPointData && deliveryPointData.dropoffLocation}</div>
+                <div className='agreementInfo'><strong>Aftalte Kilometer:</strong> {agreedKm} km</div>
+                <div className='agreementInfo-price'><strong>Samlet Pris:</strong> {totalPrice.toFixed(2)} kr</div>
+                <div className='agreementInfo-price'><strong>Pris Pr. Måned:</strong> {monthlyPrice.toFixed(2)} kr</div>
                 </div>
               </div>
             </div>
             <div className="cc-column-2">
               <div className="cc-div-10">
-                <div className="cc-div-11">Valgt bil</div>
-                <div> {selectedCar && selectedCar.carBrand} {selectedCar && selectedCar.model}</div>
-                <div><strong>Samlet Pris:</strong> {totalPrice.toFixed(2)} kr</div>
-              </div>
+                <div className="agreement-container-car">
+                <div className="agreement-header">{selectedCar && selectedCar.carBrand} {selectedCar && selectedCar.model}</div>
+                <div> <img src={selectedCar.urlPhoto} alt={`${selectedCar.carBrand} ${selectedCar.model}`} className="car-image-agreement" /></div>
+                <div className='agreementInfo'><strong>Kørt km ved start:</strong> {selectedCar && selectedCar.drivenKilometersAtSubscriptionStart} km</div>
+                <div className='agreementInfo'><strong>Brændstof:</strong> {selectedCar && selectedCar.fuel} </div>
+                </div>
+              </div> 
             </div>
           </div>
         </div>

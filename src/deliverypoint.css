@@ -1,0 +1,14 @@
+.cc-div-7 select, .cc-div-10 select {
+    width: 100%; /* Fuldbredde af containeren */
+    padding: 10px; /* Tilføjer padding for bedre læsbarhed */
+    margin-top: 10px; /* Afstand til overskriften */
+    border-radius: 5px; /* Afrundede hjørner */
+    border: 1px solid #ddd; /* Subtil kantfarve */
+    background-color: #f9f9f9; /* Let baggrundsfarve */
+    font-size: 16px; /* Større tekststørrelse for læsbarhed */
+}
+
+.cc-div-7 select:hover, .cc-div-10 select:hover {
+    border-color: #3a57e8; /* Skifter kantfarven ved hover */
+    box-shadow: 0 0 8px rgba(58, 87, 232, 0.2); /* Skyggeeffekt ved hover */
+}

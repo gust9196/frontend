@@ -18,7 +18,7 @@ const CarList = () => {
   };
 
   useEffect(() => {
-    axios.get('https://babackenddbapi.azurewebsites.net/car')
+    axios.get('http://localhost:4000/car')
       .then(response => setCars(response.data))
       .catch(error => console.error('Fejl ved hentning af biler:', error));
   }, []);

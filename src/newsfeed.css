@@ -3,6 +3,9 @@
 .news-feed-container {
     max-width: 600px;
     margin: 0 auto;
+    background-color: #d9d9d9;
+    padding: 30px;
+    border-radius: 15px;
   }
   
   h2 {
@@ -21,6 +24,11 @@
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .news-item:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   .news-title {

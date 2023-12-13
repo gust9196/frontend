@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginForm from "./LoginForm";
 import Sidebar from "./Sidebar";
@@ -13,7 +13,6 @@ import CarList from "./CarList";
 import LeaseAgreementList from "./LeaseAgreementList";
 import NewsFeed from "./NewsFeed";
 import CustomerList from "./CustomersList";
-import DeliveryPoint from "./DeliveryPoint";
 
 
 function App() {
@@ -24,8 +23,8 @@ function App() {
         <Sidebar />
         <div className="sidebar-content-container">
         <Routes>
+          <Route path="/" element={<NewsFeed />} />
           <Route path="/login" element={<LoginForm />} />
-          <Route path="/" element={<><NewsFeed /></>} />
           <Route path="/new-agreement" element={<RegisterNewAgreement />} />
           <Route path="/new-car" element={<RegisterNewCar />} />
           <Route path="/new-customer" element={<RegisterNewCustomer />} />
@@ -37,7 +36,6 @@ function App() {
           <Route path="/leaseagreementlist" element={<LeaseAgreementList />} />
           <Route path="/newsfeed" element={<NewsFeed />} />
           <Route path="/customerslist" element={<CustomerList />} />
-          <Route path="/deliverypoint" element={<DeliveryPoint />} />
         </Routes>
         </div>
         </div>

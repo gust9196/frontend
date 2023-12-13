@@ -3,6 +3,8 @@ import './registernewagreement.css';
 import CarListForm from './CarListForm';
 import SearchCustomerComponent from './SearchCustomerComponent';
 import ChoosePeriod from './ChoosePeriod';
+import DeliveryPoint from './DeliveryPoint';
+import AgreedKm from './AgreedKm';
 
 function RegisterNewAgreement() {
 
@@ -24,6 +26,8 @@ function RegisterNewAgreement() {
           {currentStep === 1 && <SearchCustomerComponent goToNextStep={goToNextStep} />}
           {currentStep === 2 && <ChoosePeriod goToNextStep={goToNextStep} />}
           {currentStep === 3 && <CarListForm goToNextStep={goToNextStep} />}
+          {currentStep === 4 && <DeliveryPoint goToNextStep={goToNextStep} />}
+          {currentStep === 5 && <AgreedKm goToNextStep={goToNextStep} />}
         </>
         
   )

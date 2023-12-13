@@ -1,9 +1,9 @@
 .app-container {
     display: flex;
-    height: 100vh; /* Fuld højde af viewport */
+    height: 100vh;
   }
   
   .sidebar-content-container {
     flex-grow: 1;
-    padding: 20px; /* Juster efter behov */
+    padding: 20px;
   }

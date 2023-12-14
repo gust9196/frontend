@@ -8,7 +8,6 @@ const CarListForm = ({ goToNextStep, onSelectCar }) => {
 
   const handleCarSelect = (car) => {
     setSelectedCar(car);
-    onSelectCar(car);
     console.log(car);
   };
 

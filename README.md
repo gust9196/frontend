@@ -18,7 +18,6 @@
  - Formål
  - Medlemmere
  - Licens
- - Contribute
 
 ## ❓Problemformulering
 Hvordan kan Bilabonnement.dk effektivisere og automatisere deres nuværende forretningspro-cesser, som i øjeblikket primært håndteres manuelt i Excel, for at skabe en mere strømlinet og fejlfri oplevelse for både kunder og interne interessenter? 
@@ -62,8 +61,4 @@ Hvis du/i vil i kontakt med os kan du lave et mention ved at tagge os med `@` pl
 ## ⚖️Licens 
 
 Dette projekt er licenseret under en [Creative Commons Kreditering-Ikkekommerciel 4.0 International-licens](http://creativecommons.org/licenses/by-nc/4.0/).
-
-## [🕹️Contribute](https://github.com/nicklassienczak/BeSammen/blob/e789eac970a3cecceecea62ed0bf839091fd94b6/Contribute.md)
-Se vores contribute fil for mere information! Kom glad🦆
-[Contribute fil](https://github.com/nicklassienczak/BeSammen/blob/e789eac970a3cecceecea62ed0bf839091fd94b6/Contribute.md)
 

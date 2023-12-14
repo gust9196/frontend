@@ -19,7 +19,7 @@ function RegisterNewCustomer() {
     console.log("Formularen blev indsendt");
     try {
       const response = await axios.post(
-        "http://babackenddbapi.azurewebsites.net/customer/create",
+        "https://babackenddbapi.azurewebsites.net/customer/create",
         customerData,
       );
       console.log("kunde oprettet:", response.data);

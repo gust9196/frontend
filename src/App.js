@@ -97,9 +97,9 @@ function App() {
               <Route
                 path="/customerslist"
                 element={
-                  <PrivateRoute>
+                 
                     <CustomersList />
-                  </PrivateRoute>
+                  
                 }
               />
               <Route

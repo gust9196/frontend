@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "/Users/arnefogh/frontend/src/Car/carlist.css";
+import "../Car/carlist.css";
 
 const CarListForm = ({ goToNextStep, onSelectCar }) => {
   const [cars, setCars] = useState([]);

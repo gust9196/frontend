@@ -27,9 +27,9 @@ function App() {
     const location = useLocation();
     if (location.pathname !== "/login") {
       return (
-        <PrivateRoute>
+        
           <Sidebar />
-        </PrivateRoute>
+        
       );
     }
     return null;

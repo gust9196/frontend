@@ -24,7 +24,7 @@ const CarListForm = ({ goToNextStep, onSelectCar }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/car")
+      .get("babackenddbapi.azurewebsites.net/car")
       .then((response) => setCars(response.data))
       .catch((error) => console.error("Fejl ved hentning af biler:", error));
   }, []);

@@ -11,7 +11,9 @@
 
 ## 📖Oversigt
 
+ - Problemformulering
  - Introduktion
+ - Adgang til system
  - Funktioner
  - Formål
  - Medlemmere
@@ -24,6 +26,14 @@ Hvordan kan Bilabonnement.dk effektivisere og automatisere deres nuværende forr
 ## 👀Introduktion
 
 BilAbonnement Bilabonnement er en del af K.W. Bruun Koncernen - BilAbonnement udlejer biler på mellem 1-36 mdr.
+
+## 🔒Adgang til system
+Systemet er beskyttet af password. For at få adgang kan dette demo-login bruges:
+
+Login: admin@hotmail.dk
+Password: admin123
+
+
 ## 🎱Funktioner
 
 Brugerne af systemet kan følgende:

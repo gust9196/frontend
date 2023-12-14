@@ -13,7 +13,7 @@ function SearchCustomerComponent({ goToNextStep, onSelectCustomer }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/customer")
+      .get("babackenddbapi.azurewebsites.net/customer")
       .then((response) => setCustomers(response.data))
       .catch((error) => console.error("Error fetching customers:", error));
   }, []);

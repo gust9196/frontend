@@ -48,7 +48,7 @@ function Agreement({
 
   const handleCreateLeaseAgreement = async () => {
     try {
-      const backendEndpoint = "http://localhost:4000/leaseAgreement/create";
+      const backendEndpoint = "babackenddbapi.azurewebsites.net/leaseAgreement/create";
 
       const leaseAgreementData = {
         customer: customerData,

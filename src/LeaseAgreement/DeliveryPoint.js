@@ -10,7 +10,7 @@ function DeliveryPoint({ goToNextStep, onSelectDeliveryPoint }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/pickupLocation")
+      .get("babackenddbapi.azurewebsites.net/pickupLocation")
       .then((response) => {
         setPickupLocations(response.data);
         setDropoffLocations(response.data);

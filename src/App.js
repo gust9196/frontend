@@ -27,9 +27,9 @@ function App() {
     const location = useLocation();
     if (location.pathname !== "/login") {
       return (
-        
+       // <PrivateRoute>
           <Sidebar />
-        
+      //  </PrivateRoute>
       );
     }
     return null;
@@ -49,17 +49,17 @@ function App() {
               <Route
                 path="/"
                 element={
-                  <PrivateRoute>
+             //     <PrivateRoute>
                     <NewsFeed />
-                  </PrivateRoute>
+             //     </PrivateRoute>
                 }
               />
               <Route
                 path="/new-agreement"
                 element={
-                  <PrivateRoute>
+               //   <PrivateRoute>
                     <RegisterNewAgreement />
-                  </PrivateRoute>
+               //   </PrivateRoute>
                 }
               />
               <Route
@@ -97,9 +97,9 @@ function App() {
               <Route
                 path="/customerslist"
                 element={
-                 
+                  <PrivateRoute>
                     <CustomersList />
-                  
+                  </PrivateRoute>
                 }
               />
               <Route

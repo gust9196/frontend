@@ -40,13 +40,14 @@ function SearchCustomerComponent({ goToNextStep, onSelectCustomer }) {
     setSelectedCustomer(customer);
     setSearchTerm("");
     setSuggestions([]);
-    onSelectCustomer(customer);
+    // onSelectCustomer(customer); // Fjernet for at forhindre automatisk navigation
   };
 
   const handleNextButtonClick = () => {
     if (!selectedCustomer) {
       alert("Vælg venligst en kunde før du fortsætter.");
     } else {
+      onSelectCustomer(selectedCustomer); // Tilføjet for at sende valgt kunde videre
       goToNextStep();
     }
   };

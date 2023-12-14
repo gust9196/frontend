@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CarListForm from "./CarListForm";
-import SearchCustomerComponent from "../Customer/SearchCustomerComponent";
+import SearchCustomerComponent from "./SearchCustomerComponent";
 import ChoosePeriod from "./ChoosePeriod";
 import DeliveryPoint from "./DeliveryPoint";
 import AgreedKm from "./AgreedKm";

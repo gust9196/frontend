@@ -26,7 +26,7 @@ function LoginForm(props) {
 
     try {
       const response = await axios.get(
-        `http://babackenddbapi.azurewebsites.net/user/loginCheck?email=${encodeURIComponent(
+        `https://babackenddbapi.azurewebsites.net/user/loginCheck?email=${encodeURIComponent(
           email,
         )}&password=${encodeURIComponent(password)}`,
       );

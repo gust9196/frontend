@@ -121,3 +121,15 @@
       margin-top: 40px;
     }
   }
+
+  .error-message-login {
+    color: #ffffff; 
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff3d3d; 
+    border: 1px solid #ae0101; 
+    text-align: center;
+    font-weight: 600;
+    font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+}

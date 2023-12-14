@@ -68,7 +68,7 @@ function LoginForm(props) {
             value={password}
             onChange={handlePasswordChange}
           />
-          {error && <div className="error-message">{error}</div>}
+          {error && <div className="error-message-login">{error}</div>}
           <button className="login-button" onClick={handleSubmit}>
             Log ind
           </button>

@@ -19,7 +19,7 @@ const CreateDamage = () => {
       .catch((error) => console.error("Fejl ved hentning af biler:", error));
 
     axios
-      .get("http://babackenddbapi.azurewebsites.net/leaseAgreement")
+      .get("https://babackenddbapi.azurewebsites.net/leaseAgreement")
       .then((response) => setLeases(response.data))
       .catch((error) =>
         console.error("Fejl ved hentning af leaseaftaler:", error),
@@ -42,7 +42,7 @@ const CreateDamage = () => {
     };
 
     axios
-      .post("http://babackenddbapi.azurewebsites.net/damages/create", newDamage)
+      .post("https://babackenddbapi.azurewebsites.net/damages/create", newDamage)
       .then((response) => {
         console.log("Skade oprettet:", response.data);
         setSelectedCar("");

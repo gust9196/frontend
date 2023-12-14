@@ -24,7 +24,7 @@ function RegisterNewCar() {
     console.log("Formularen blev indsendt");
     try {
       const response = await axios.post(
-        "babackenddbapi.azurewebsites.net/car/create",
+        "http://babackenddbapi.azurewebsites.net/car/create",
         carData,
       );
       console.log("Bil oprettet:", response.data);

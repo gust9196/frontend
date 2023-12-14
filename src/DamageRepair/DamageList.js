@@ -7,7 +7,7 @@ const DamageList = () => {
 
   useEffect(() => {
     axios
-      .get("babackenddbapi.azurewebsites.net/damages")
+      .get("http://babackenddbapi.azurewebsites.net/damages")
       .then((response) => setDamages(response.data))
       .catch((error) =>
         console.error("Fejl ved hentning af skadeliste:", error),

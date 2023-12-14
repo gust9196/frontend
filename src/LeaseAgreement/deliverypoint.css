@@ -1,0 +1,14 @@
+.cc-div-7 select, .cc-div-10 select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ddd; 
+    background-color: #f9f9f9; 
+    font-size: 16px; 
+}
+
+.cc-div-7 select:hover, .cc-div-10 select:hover {
+    border-color: #3a57e8; 
+    box-shadow: 0 0 8px rgba(58, 87, 232, 0.2); 
+}

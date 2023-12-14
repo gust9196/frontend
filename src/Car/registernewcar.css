@@ -1,0 +1,111 @@
+.row-container {
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    float: inline-start;
+  }
+
+  .row-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  .row-2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  .div-header-title {
+    padding-top: 30px;
+    color: #000000;
+    font: 700 20px/35px Inter, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+ 
+  
+  .div-input {
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--3A57E8-Primary, #3a57e8);
+    background-color: var(--FFFFFF-Bg-1, #fff);
+    align-self: stretch;
+    display: flex;
+    min-height: 44px;
+    margin-top: 2px;
+    width: 200px;
+    flex-direction: column;
+  }
+
+  .div-title {
+    color: var(--8A92A6-Text-Color-2, #8a92a6);
+    align-self: stretch;
+    margin-top: 8px;
+    width: 200px;
+    font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+
+
+  .div-new-car {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: bottom;
+    border-radius: 5px;
+    background-color: #3a57e8;
+    border: 1px solid var(--3A57E8-Primary, #3a57e8);
+    width: 200px;
+    max-width: 100%;
+    padding: 8px 2px;
+    font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+
+  .div-new-car-btn {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: bottom;
+    border-radius: 5px;
+    background-color: #3a57e8;
+    border: 1px solid var(--3A57E8-Primary, #3a57e8);
+    width: 270px;
+    max-width: 100%;
+    padding: 8px 2px;
+    font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+
+  .custom-select {
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--FFFFFF-Bg-1, #fff);
+    border: 1px solid var(--3A57E8-Primary, #3a57e8);
+    align-self: stretch;
+    display: flex;
+    min-height: 44px;
+    margin-top: 2px;
+    width: 204px;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 12px 8px;
+  }
+  
+  
+
+  .custom-select option {
+    color: #333; 
+  }
+  
+  .custom-select option[value=""][disabled] {
+    color: grey;
+  }

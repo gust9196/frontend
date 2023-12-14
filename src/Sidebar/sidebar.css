@@ -55,4 +55,8 @@
       margin: 20px 0 0 15px;
       font: 400 16px/28px Inter, -apple-system, Roboto, Helvetica, sans-serif;
     }
+
+    .sb-title:hover {
+      background-color: #0a2298;
+    }
     

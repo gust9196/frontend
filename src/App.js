@@ -26,7 +26,11 @@ function App() {
   function ConditionalSidebar() {
     const location = useLocation();
     if (location.pathname !== "/login") {
-      return <PrivateRoute><Sidebar /></PrivateRoute>;
+      return (
+        <PrivateRoute>
+          <Sidebar />
+        </PrivateRoute>
+      );
     }
     return null;
   }
@@ -35,21 +39,84 @@ function App() {
     <>
       <Router>
         <div className="app-container">
-        <ConditionalSidebar />
+          <ConditionalSidebar />
           <div className="sidebar-content-container">
             <Routes>
-              <Route path="/login" element={<LoginForm onLogin={handleLogin} />} />
-              <Route path="/" element={<PrivateRoute><NewsFeed /></PrivateRoute>} />
-              <Route path="/new-agreement" element={<PrivateRoute><RegisterNewAgreement /></PrivateRoute>} />
-              <Route path="/new-car" element={<PrivateRoute><RegisterNewCar /></PrivateRoute>} />
-              <Route path="/new-customer" element={<PrivateRoute><RegisterNewCustomer /></PrivateRoute>} />
-              <Route path="/damage-repair" element={<PrivateRoute><DamageRepair /></PrivateRoute>} />
-              <Route path="/analytics" element={<PrivateRoute><Analytics /></PrivateRoute>} />
-              <Route path="/customerslist" element={<PrivateRoute><CustomersList /></PrivateRoute>} />
-              <Route path="/carlist" element={<PrivateRoute><CarList /></PrivateRoute>} />
+              <Route
+                path="/login"
+                element={<LoginForm onLogin={handleLogin} />}
+              />
+              <Route
+                path="/"
+                element={
+                  <PrivateRoute>
+                    <NewsFeed />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/new-agreement"
+                element={
+                  <PrivateRoute>
+                    <RegisterNewAgreement />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/new-car"
+                element={
+                  <PrivateRoute>
+                    <RegisterNewCar />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/new-customer"
+                element={
+                  <PrivateRoute>
+                    <RegisterNewCustomer />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/damage-repair"
+                element={
+                  <PrivateRoute>
+                    <DamageRepair />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/analytics"
+                element={
+                  <PrivateRoute>
+                    <Analytics />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/customerslist"
+                element={
+                  <PrivateRoute>
+                    <CustomersList />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/carlist"
+                element={
+                  <PrivateRoute>
+                    <CarList />
+                  </PrivateRoute>
+                }
+              />
               <Route
                 path="/leaseagreementlist"
-                element={<PrivateRoute><LeaseAgreementList /></PrivateRoute>}
+                element={
+                  <PrivateRoute>
+                    <LeaseAgreementList />
+                  </PrivateRoute>
+                }
               />
             </Routes>
           </div>

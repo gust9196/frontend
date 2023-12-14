@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import "./loginstyle.css";
 
 function LoginForm(props) {
@@ -23,11 +23,15 @@ function LoginForm(props) {
       setError("Udfyld venligst alle felter");
       return;
     }
-  
+
     try {
-      const response = await axios.get(`http://localhost:4000/user/loginCheck?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`);
+      const response = await axios.get(
+        `http://localhost:4000/user/loginCheck?email=${encodeURIComponent(
+          email,
+        )}&password=${encodeURIComponent(password)}`,
+      );
       if (response.data.valid) {
-        props.onLogin(true);  // Opdater login-status
+        props.onLogin(true);
         navigate("/");
         setError("");
       } else {
@@ -43,7 +47,7 @@ function LoginForm(props) {
     <>
       <div className="main-container">
         <div className="image-wrapper">
-        <img
+          <img
             loading="lazy"
             srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/bd920615-a09b-45ac-8454-71e12a613401?apiKey=5aea209633a743968e186ed24c6841a0&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/bd920615-a09b-45ac-8454-71e12a613401?apiKey=5aea209633a743968e186ed24c6841a0&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/bd920615-a09b-45ac-8454-71e12a613401?apiKey=5aea209633a743968e186ed24c6841a0&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/bd920615-a09b-45ac-8454-71e12a613401?apiKey=5aea209633a743968e186ed24c6841a0&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/bd920615-a09b-45ac-8454-71e12a613401?apiKey=5aea209633a743968e186ed24c6841a0&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/bd920615-a09b-45ac-8454-71e12a613401?apiKey=5aea209633a743968e186ed24c6841a0&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/bd920615-a09b-45ac-8454-71e12a613401?apiKey=5aea209633a743968e186ed24c6841a0&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/bd920615-a09b-45ac-8454-71e12a613401?apiKey=5aea209633a743968e186ed24c6841a0&"
             className="image"

@@ -109,3 +109,7 @@
   .custom-select option[value=""][disabled] {
     color: grey;
   }
+
+  .re-main-container {
+    font-family: Arial, Helvetica, sans-serif;
+  }

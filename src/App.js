@@ -47,6 +47,10 @@ function App() {
                 element={<LoginForm onLogin={handleLogin} />}
               />
               <Route
+                path="/frontend"
+                element={<LoginForm onLogin={handleLogin} />}
+              />
+              <Route
                 path="/"
                 element={
                   <PrivateRoute>

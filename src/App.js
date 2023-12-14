@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import LoginForm from "./Login/LoginForm";
 import Sidebar from "./Sidebar/Sidebar";
 import RegisterNewAgreement from "./LeaseAgreement/RegisterNewAgreement";
@@ -13,25 +13,43 @@ import LeaseAgreementList from "./LeaseAgreement/LeaseAgreementList";
 import NewsFeed from "./Api/NewsFeed";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = (status) => {
+    setIsLoggedIn(status);
+  };
+
+  const PrivateRoute = ({ children }) => {
+    return isLoggedIn ? children : <Navigate to="/login" />;
+  };
+
+  function ConditionalSidebar() {
+    const location = useLocation();
+    if (location.pathname !== "/login") {
+      return <PrivateRoute><Sidebar /></PrivateRoute>;
+    }
+    return null;
+  }
+
   return (
     <>
       <Router>
         <div className="app-container">
-          <Sidebar />
+        <ConditionalSidebar />
           <div className="sidebar-content-container">
             <Routes>
-              <Route path="/" element={<NewsFeed />} />
-              <Route path="/login" element={<LoginForm />} />
-              <Route path="/new-agreement" element={<RegisterNewAgreement />} />
-              <Route path="/new-car" element={<RegisterNewCar />} />
-              <Route path="/new-customer" element={<RegisterNewCustomer />} />
-              <Route path="/damage-repair" element={<DamageRepair />} />
-              <Route path="/analytics" element={<Analytics />} />
-              <Route path="/customerslist" element={<CustomersList />} />
-              <Route path="/carlist" element={<CarList />} />
+              <Route path="/login" element={<LoginForm onLogin={handleLogin} />} />
+              <Route path="/" element={<PrivateRoute><NewsFeed /></PrivateRoute>} />
+              <Route path="/new-agreement" element={<PrivateRoute><RegisterNewAgreement /></PrivateRoute>} />
+              <Route path="/new-car" element={<PrivateRoute><RegisterNewCar /></PrivateRoute>} />
+              <Route path="/new-customer" element={<PrivateRoute><RegisterNewCustomer /></PrivateRoute>} />
+              <Route path="/damage-repair" element={<PrivateRoute><DamageRepair /></PrivateRoute>} />
+              <Route path="/analytics" element={<PrivateRoute><Analytics /></PrivateRoute>} />
+              <Route path="/customerslist" element={<PrivateRoute><CustomersList /></PrivateRoute>} />
+              <Route path="/carlist" element={<PrivateRoute><CarList /></PrivateRoute>} />
               <Route
                 path="/leaseagreementlist"
-                element={<LeaseAgreementList />}
+                element={<PrivateRoute><LeaseAgreementList /></PrivateRoute>}
               />
             </Routes>
           </div>

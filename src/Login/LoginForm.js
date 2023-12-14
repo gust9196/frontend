@@ -25,8 +25,9 @@ function LoginForm(props) {
     }
   
     try {
-      const response = await axios.get(`http://localhost:4000/user?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`);
+      const response = await axios.get(`http://localhost:4000/user/loginCheck?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`);
       if (response.data.valid) {
+        props.onLogin(true);  // Opdater login-status
         navigate("/");
         setError("");
       } else {

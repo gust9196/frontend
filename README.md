@@ -7,7 +7,7 @@
 
 ***
 
-**Hey!** 👋 Velkommen til vores 3. tværfalige projekt på 3. Semester på IT Arkitektur på Københavns Erhvervsakademi.
+**Hey!** 👋 Velkommen til vores 3. tværfalige projekt på 3. Semester på IT Arkitektur på Københavns Erhvervsakademi. Se afsnit 3 for adgang.
 
 ## 📖Oversigt
 
@@ -32,6 +32,7 @@ Systemet er beskyttet af password. For at få adgang kan dette demo-login bruges
 Login: admin@hotmail.dk
 Password: admin123
 
+**Vores backend går automatisk i sleep-mode når den ikke bliver brugt. For at vække den kan man indtaste login, trykke login, vente 2-3 minutter, også prøve igen. Så kan man logge ind**
 
 ## 🎱Funktioner
 
